@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    <script src="JS/ativ4.js"></script>
+</head>
+<body>
+     <H1>MouseOver</H1>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="sans.jpeg" width="32" height="32">
+    <p>.</p>
+    <h1>OnChange</h1>
+    <p>qual materia você tiraria do curriculo.</p>
+
+<select id="mySelect" onchange="change()">
+  <option value="EAMT">EAMT</option>
+  <option value="EAMT">EACNT</option>
+  <option value="FISICA">FISICA</option>
+  <option value="QUIMICA">QUIMICA</option>
+</select>
+
+<p id="demo"></p>
+<p>.</p>
+<h1>OnFocus</h1>
+
+<h2>clica pra escrever</h2>
+<input type="text" onfocus="myFunction(this)">
+
+<h1>extra</h1>
+<h2>dubleclick</h2>
+<button ondblclick="extra()">Me aperte 2 vezes</button>
+
+</body>
+</html>

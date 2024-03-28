@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+    <script src="JS/ativ3.js"></script>
+</head>
+<body>
+    <h2>getElementById()</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Pega apenas no id do elemento";
+// id
+</script>
+<h2>getElementsByTagName()</h2>
+
+<p>lista:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<P>pega o valor referente ao nome da tag, e busca o valor desejado naquel tag
+</P>
+<p>o 2 elemento da lista é:</p>
+<p id="lista"></p>
+
+<script>
+  
+const ABC = document.getElementsByTagName("li");
+document.getElementById("lista").innerHTML = ABC[1].innerHTML;
+</script>
+
+<h2>getElementsByClassName()</h2>
+
+<p>Altere o texto do primeiro elemento com class="example":</p>
+
+<div class="example">ElementO 1</div>
+<div class="example">ElementO 2</div>
+
+<script>
+const collection = document.getElementsByClassName("example");
+collection[0].innerHTML = "Hello World!";
+</script>
+
+<h2> querySelector() </h2>
+
+<h3>adiciona uma cor de fundo ao primeiro elemento "h3" :</h3>
+<h4>1° elemento H4</h4>
+<h4>2° elemento H4.</h4>
+
+<script>
+document.querySelector("h4").style.backgroundColor = "purple";
+</script>
+
+<h2>querySelectorAll()</h2>
+
+<p>adiciona cor de fundo a todos os elementos com a class="exall":</p>
+<h2 class="exall">A heading</h2>
+<p class="exall">A paragraph.</p> 
+
+<script>
+const nodeList = document.querySelectorAll(".exall");
+for (let i = 0; i < nodeList.length; i++) {
+  nodeList[i].style.backgroundColor = "purple";
+}
+</script>
+
+
+</body>
+</html>
